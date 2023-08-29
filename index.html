@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- O que é isso ? -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- O que é isso ? -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"><!-- O que é isso ? -->
+
+        <title>Music Player</title>
+        <!--Importando css-->
+        <link rel="stylesheet" href="style.css">
+
+        <!--Importando Link com icones pré-prontos-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    </head>
+    <body>
+        <!-- O que é class ? -->
+        <div class="player">
+            <div class="logo">
+                <i class= 'bx bx-music'></i>
+            </div>
+            <span id="musicName"></span>
+
+            <audio id="player" src=""></audio>
+            <div class="controls">
+                <!--Controles do player-->
+                
+                <button id="prevButton"> 
+                    <i class='bx bx-skip-previous'></i>
+                </button>
+
+                <button id="playPauseButton"> 
+                    <i class='bx bx-caret-right'></i>
+                </button>
+
+                <button id="nextButton">
+                    <i class='bx bx-skip-next'></i>
+                </button>
+            </div>
+            <div class="footer">
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
+                <div class="time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            
+            </div>
+        </div>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>
